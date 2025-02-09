@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: lightcoral;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5), -10px -10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+    margin-top: 0;
+    padding: 20px;
+    font-size: 2.5rem;
+   
+}
+
+.joke{
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.container .btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: lightpink;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+/*For  Responsive Design */
+/* Adjustments for screens smaller than 800px */
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .container h1 {
+        font-size: 2rem;  /* Slightly smaller heading font */
+    }
+
+    .joke {
+        font-size: 1.5rem;  /* Adjusting joke text size */
+        padding: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Further adjustments for very small screens (e.g., smartphones) */
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .joke {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
